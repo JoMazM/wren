@@ -34,6 +34,7 @@ pub fn build(b: *std.Build) void {
     wren_vm.installHeadersDirectory(b.path("src/include"), "", .{
         .include_extensions = &.{
             ".h",
+            ".hpp",
         },
         .exclude_extensions = &.{
             "am",
